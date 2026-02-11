@@ -110,6 +110,7 @@ npx @tailwindcss/cli -i src/input.css -o static/styles.css --minify
 ## Author
 
 Made by **wildmannli** 
+
 Website: `http://p2rgu6abl57pxotfaeg2aw7puh2adxvqisxp5cij3by44zyjustg3xid.onion`
 
 ## License
