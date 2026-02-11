@@ -20,11 +20,11 @@ A privacy-focused, encrypted pastebin. No JavaScript, no accounts, no tracking.
 
 ### Homepage + Public Feed
 
-![Homepage with paste creation form and public feed](showcase/2.png)
+![Homepage with paste creation form and public feed](showcase/1.png)
 
 ### Admin View + Syntax Highlighting
 
-![Admin view with share and delete links plus highlighted source code](showcase/1.png)
+![Admin view with share and delete links plus highlighted source code](showcase/2.png)
 
 ### Markdown Rendering
 
