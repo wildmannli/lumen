@@ -1,0 +1,24 @@
+# Compiled binary
+lumen
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Dependencies
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment (secrets)
+.env
+
+# OS
+.DS_Store
+Thumbs.db
