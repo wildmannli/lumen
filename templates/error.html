@@ -1,0 +1,19 @@
+{{ define "error.html" }}
+{{ template "meta_head" . }}
+{{ template "header" . }}
+
+<div class="h-full flex items-center justify-center -mt-16">
+    <div class="w-full max-w-md text-center">
+        <img src="/static/lumen.png" alt="Lumen" class="w-16 h-16 object-contain mx-auto mb-6 opacity-80">
+        <h1 class="text-4xl font-bold text-white mb-2">{{ .Title }}</h1>
+        <p class="text-neutral-500 mb-8">{{ .Message }}</p>
+
+        <a href="/"
+            class="inline-block px-6 py-3 bg-white text-black font-semibold rounded-md hover:bg-neutral-200 transition-colors text-sm">
+            Return Home
+        </a>
+    </div>
+</div>
+
+{{ template "footer" . }}
+{{ end }}

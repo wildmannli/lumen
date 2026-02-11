@@ -1,0 +1,67 @@
+{{ define "meta_head" }}
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-black">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lumen - Secure, Anonymous, Professional Paste Bin.">
+    <title>{{ .Title }}</title>
+
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" type="image/png" href="/static/lumen.png">
+</head>
+
+<body class="h-full flex flex-col font-sans text-neutral-200 antialiased selection:bg-white selection:text-black">
+    {{ end }}
+
+    {{ define "header" }}
+    <header class="border-b border-neutral-700 bg-[#0a0a0a] backdrop-blur-sm sticky top-0 z-50">
+        <div class="max-w-[1600px] mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
+            <a href="/" class="flex items-center gap-3 group">
+                <img src="/static/lumen.png" alt="Lumen Logo"
+                    class="w-8 h-8 object-contain opacity-90 transition-all duration-300">
+                <div class="flex flex-col">
+                    <span class="text-white font-bold leading-none tracking-tight">Lumen</span>
+                    <span class="hidden sm:block text-[10px] uppercase tracking-widest text-neutral-500 font-medium mt-0.5">Encrypted
+                        Bin</span>
+                </div>
+            </a>
+
+            <nav class="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm font-medium text-neutral-400">
+                <a href="/" class="hover:text-white transition-colors whitespace-nowrap">New Paste</a>
+                <a href="https://codeberg.org/wildmannli/lumen"
+                    target="_blank" class="group hover:text-white transition-colors flex items-center gap-2 whitespace-nowrap">
+                    Codeberg
+                    <img src="/static/icons/arrow-up-right.png" alt=""
+                        class="hidden sm:block w-2.5 h-2.5 invert opacity-60 transition-opacity duration-150 group-hover:opacity-100"
+                        aria-hidden="true">
+                </a>
+                <a href="https://github.com/wildmannli/lumen" target="_blank"
+                    class="group hover:text-white transition-colors flex items-center gap-2 whitespace-nowrap">
+                    GitHub
+                    <img src="/static/icons/arrow-up-right.png" alt=""
+                        class="hidden sm:block w-2.5 h-2.5 invert opacity-60 transition-opacity duration-150 group-hover:opacity-100"
+                        aria-hidden="true">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-1 w-full max-w-[1600px] mx-auto px-6 py-8">
+        {{ end }}
+
+        {{ define "footer" }}
+    </main>
+
+    <footer class="border-t border-neutral-700 py-8 mt-auto bg-[#0a0a0a]">
+        <div
+            class="max-w-[1600px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-xs text-neutral-600 tracking-widest">
+            <p>&copy; 2026 Lumen. Made by wildmannli</p>
+            <p class="mt-2 md:mt-0 uppercase">No Logs • No Tracking • No JS Required</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+{{ end }}

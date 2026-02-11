@@ -1,0 +1,22 @@
+{{ define "delete.html" }}
+{{ template "meta_head" . }}
+{{ template "header" . }}
+
+<div class="h-full flex items-center justify-center -mt-16">
+    <div class="w-full max-w-md bg-[#111] border border-neutral-700 rounded-lg p-8 text-center">
+        <h1 class="text-xl font-bold text-white mb-2">Delete Paste?</h1>
+        <p class="text-neutral-500 text-sm mb-8">This action is irreversible. The content will be wiped properly.</p>
+
+        <form method="POST" action="/p/{{ .PasteID }}/delete/{{ .Token }}" class="flex flex-col gap-3">
+            <input type="hidden" name="_csrf_token" value="{{ .CSRFToken }}">
+            <button type="submit"
+                class="w-full py-3 bg-red-600 text-white font-semibold rounded-md text-sm hover:bg-red-700 transition-colors">
+                Confirm Deletion
+            </button>
+            <a href="/p/{{ .PasteID }}" class="text-xs text-neutral-500 hover:text-white py-2">Cancel</a>
+        </form>
+    </div>
+</div>
+
+{{ template "footer" . }}
+{{ end }}
